@@ -1,5 +1,5 @@
 ### Hi there 👋
-
+[![An image of @equalsgibson's Holopin badges, which is a link to view their full Holopin profile](https://holopin.me/equalsgibson)](https://holopin.io/@equalsgibson)
 <!--
 **equalsgibson/equalsgibson** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
