@@ -10,3 +10,9 @@ export default meta;
  
 type Story = StoryObj<typeof Contact>;
  
+export const Basic: Story = {
+  args: {
+    icon: "fa-solid fa-phone",
+    label: "+44 (0) 7707603258"
+  }
+};

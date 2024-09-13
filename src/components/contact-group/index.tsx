@@ -1,11 +1,13 @@
 import React from "react"
 
+import styles from "./styles.module.scss"
+
 
 type Props = {
-    icon?: string
-    label: string
+    className?: string
+    dividers?: true
 }
 
 export default function ContactGroup(props: React.PropsWithChildren<Props>) {
-    return <span className="">{props.children}</span>
+    return <div className={styles.container}>{props.children}</div>
 }
