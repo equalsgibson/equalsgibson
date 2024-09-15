@@ -1,5 +1,5 @@
 import ExecutiveSummary from "@/components/executive-summary/index";
-import Contact from "@/components/contact/index";
+import Contact, { CONTACT } from "@/components/contact/index";
 import ProjectHighlight from "@/components/projectHighlight";
 
 export default function Home() {
@@ -11,8 +11,8 @@ export default function Home() {
         <span>TEST-DRIVEN DEVELOPMENT ENTHUSIAST</span>
       </section>
       <section>
-        <Contact label="c.a.gibson1990@gmail.com" />
-        <Contact label="github.com/equalsgibson" />
+        <Contact type={CONTACT.Email} label="c.a.gibson1990@gmail.com" />
+        <Contact type={CONTACT.Web}  label="https://github.com/equalsgibson" />
       </section>
       <section>
         <ExecutiveSummary />
