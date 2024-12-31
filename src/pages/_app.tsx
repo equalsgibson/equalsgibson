@@ -3,10 +3,9 @@ import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 
 import { Inter } from "next/font/google";
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ['latin'] })
 
 import '../styles/global.scss';
-
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
 	getLayout?: (page: ReactElement) => ReactNode;
@@ -21,5 +20,5 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
 	return getLayout(
 		<Component className={inter.className} {...pageProps} />
-);
+	);
 }
