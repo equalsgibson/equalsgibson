@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import type { AppProps } from "next/app";
 
 import { Inter } from "next/font/google";
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], variable: "--font-inter" })
 
 import '../styles/global.scss';
 
@@ -19,6 +19,6 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 	const getLayout = Component.getLayout ?? ((page) => page);
 
 	return getLayout(
-		<Component className={inter.className} {...pageProps} />
+		<Component {...pageProps} />
 	);
 }

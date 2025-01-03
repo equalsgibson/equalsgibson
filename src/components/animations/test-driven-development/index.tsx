@@ -8,6 +8,7 @@ export default function TestDrivenDevelopment() {
             src={"/lottie-animations/test-driven-development.lottie"}
             autoplay
             mode='bounce'
+            loop
             className={styles.container}
         />
     );
