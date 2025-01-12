@@ -4,7 +4,10 @@
 const nextConfig = {
     reactStrictMode: true,
     output: 'export',
-    trailingSlash: true,
+    images: {
+        unoptimized: true,
+    },
+    trailingSlash: false,
     distDir: "dist",
     cleanDistDir: true,
     transpilePackages: ['@lottiefiles/lottie-player'],
@@ -21,6 +24,7 @@ const nextConfig = {
 
         return config;
     },
+
 };
 
 export default nextConfig;

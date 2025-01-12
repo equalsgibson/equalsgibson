@@ -6,20 +6,25 @@ type Props = {
 }
 
 export default function Contact(props: Props) {
+
+    let value = <>{props.label}</>
     let icon = <></>
+
     switch (props.type) {
         case CONTACT.Email:
             icon = <i className="fa-solid fa-envelope" />
+            value = <a href={`mailto:${props.label}`}>{props.label}</a>
             break;
         case CONTACT.Web:
             icon = <i className="fa-solid fa-code" />
+            value = <a href={`${props.label}`} rel="noreferrer" target="_blank">{props.label}</a>
             break;
         case CONTACT.Phone:
             icon = <i className="fa-solid fa-phone" />
             break;
     }
 
-    return <span className={styles.container}>{icon}{props.label}</span>
+    return <span className={styles.container}>{icon}{value}</span>
 }
 
 export enum CONTACT {

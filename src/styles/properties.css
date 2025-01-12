@@ -39,3 +39,9 @@
   inherits: false;
   initial-value: #101720;
 }
+
+@property --border-radius-regular {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}

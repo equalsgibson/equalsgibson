@@ -1,7 +1,11 @@
 .container {
-    background-color: blue;
+    >h3 {
+        font-size: 1.5rem;
+    }
+    margin: 1rem 0;
+    .summary {
+        font-size: 14px;
+        margin: .5rem 0;
+    }
 }
 
-.discussionContainer {
-    height: 100px;
-}

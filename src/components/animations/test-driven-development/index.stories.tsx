@@ -14,7 +14,7 @@ export const Basic: Story = {
     args: {
         dividers: true,
         children: [
-            <TestDrivenDevelopment key={"wave"} />,
+            <TestDrivenDevelopment key={"test-driven-development"} />,
         ]
     },
 };
