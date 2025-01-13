@@ -1,11 +1,28 @@
 .container {
-    >h3 {
+    border-top: 2px solid white;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    display: flex;
+    gap: 2rem;
+    
+    h3 {
         font-size: 1.5rem;
+        margin-bottom: .5rem;
     }
-    margin: 1rem 0;
+
     .summary {
-        font-size: 14px;
-        margin: .5rem 0;
+        margin-bottom: auto;
     }
+
+    .techstack {
+        max-width: 25rem;
+        margin-bottom: auto;
+        > div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .5rem;
+        }
+    }   
 }
 

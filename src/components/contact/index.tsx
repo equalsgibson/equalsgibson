@@ -19,6 +19,10 @@ export default function Contact(props: Props) {
             icon = <i className="fa-solid fa-code" />
             value = <a href={`${props.label}`} rel="noreferrer" target="_blank">{props.label}</a>
             break;
+        case CONTACT.LinkedIn:
+            icon = <i className="fa-brands fa-linkedin" />
+            value = <a href={`${props.label}`} rel="noreferrer" target="_blank">{props.label}</a>
+            break;
         case CONTACT.Phone:
             icon = <i className="fa-solid fa-phone" />
             break;
@@ -30,5 +34,6 @@ export default function Contact(props: Props) {
 export enum CONTACT {
     Email = "email",
     Web = "web",
-    Phone = "phone"
+    Phone = "phone",
+    LinkedIn = "linkedin"
 }

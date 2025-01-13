@@ -9,6 +9,9 @@ export default function Discussion() {
 
     useEffect(() => {
         if (dotLottie) {
+            dotLottie.addEventListener('freeze', () => {
+                dotLottie.unfreeze()
+            })
             dotLottie.addEventListener('complete', () => {
                 dotLottie.setSegment(100, 235)
                 dotLottie.setLoop(true)

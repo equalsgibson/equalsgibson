@@ -1,41 +1,67 @@
 main {
-    .headerContainer {
+    .headline {
         display: flex;
         gap: 1rem;
-        align-items: center;
-        padding: 1rem 0;
-        margin-bottom: .5rem;
-        >h1 {
-            margin: 0;
-            padding: 0;
-        }
-        >img {
-            border-radius: 48px;
-            border: 1px solid var(--color-text-primary);
-            box-shadow: 0px 0px 6px var(--color-dark-mode);
-        }
-    }
-
-    .taglineContainer {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-        
-        .tagline {
-            font-weight: 700;
-            white-space: nowrap;
-            font-size: 12px;
-            height: 3rem;
-            padding: .5rem .5rem .5rem 1rem;
-            gap: .5rem;
-            border: 1px solid var(--color-text-primary);
-            box-shadow: 0px 0px 6px var(--color-dark-mode);
-            border-radius: 4rem;
-            background-color: var(--color-bg-primary);        
+        justify-content: space-between;
+        .headerContainer {
             display: flex;
-            > span {
-                margin: auto;
+            gap: 1rem;
+            align-items: center;
+            padding: 1rem 0;
+            margin-bottom: .5rem;
+            >h1 {
+                margin: 0;
+                padding: 0;
+            }
+            >img {
+                border-radius: 48px;
+                border: 1px solid var(--color-text-primary);
+                box-shadow: 0px 0px 6px var(--color-dark-mode);
+            }
+        }
+    
+        .taglineContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            
+            .tagline {
+                font-weight: 700;
+                white-space: nowrap;
+                font-size: 12px;
+                height: 3rem;
+                padding: .5rem .5rem .5rem 1rem;
+                gap: .5rem;
+                border: 1px solid var(--color-text-primary);
+                box-shadow: 0px 0px 6px var(--color-dark-mode);
+                border-radius: 4rem;
+                background-color: var(--color-bg-primary);        
+                display: flex;
+                > span {
+                    margin: auto;
+                }
             }
         }
     }
+
+    .contactContainer {
+        border-top: solid 2px var(--color-text-primary);
+        padding-top: 1rem;
+        font-size: 14px;
+        h3 {
+            font-size: 1.5rem;
+        }
+        >div {
+            display: flex;
+            margin-top: 1rem;
+            gap: 2rem;
+            align-items: center;
+            justify-content: center;
+            .discussionContainer {
+                max-height: 10rem;
+            }
+        }
+    }
+   
 }
