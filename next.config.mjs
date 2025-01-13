@@ -8,7 +8,7 @@ const nextConfig = {
         unoptimized: true,
     },
     trailingSlash: false,
-    distDir: "dist",
+    distDir: "out",
     cleanDistDir: true,
     transpilePackages: ['@lottiefiles/lottie-player'],
     sassOptions: {
