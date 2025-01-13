@@ -1,0 +1,10 @@
+.container {
+        display: flex;
+        justify-content: center;
+        > canvas {
+            flex: 1;
+            height: 100% !important;
+            width: 100% !important;
+            aspect-ratio: 1 / 1;
+        }
+    }

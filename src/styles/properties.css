@@ -1,0 +1,47 @@
+@property --color-bg-primary {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #264653;
+}
+
+@property --color-bg-secondary  {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #2A9D8F;
+}
+
+@property --color-tertiary  {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #E9C46A;
+}
+
+@property --color-accent  {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #E76F51;
+}
+
+@property --color-accent-alt  {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #F4A261;
+}
+
+@property --color-text-primary  {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #FAF9F6;
+}
+
+@property --color-dark-mode {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #101720;
+}
+
+@property --border-radius-regular {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 1;
+}
