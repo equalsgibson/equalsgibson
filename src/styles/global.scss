@@ -5,10 +5,11 @@
 html {
     color: var(--color-text-primary);
     background-color: var(--color-dark-mode);
-   
+    padding: .5rem;
 }
 
 main {
     margin: auto;
+    min-width: 400px;
     max-width: 1200px;
 }
